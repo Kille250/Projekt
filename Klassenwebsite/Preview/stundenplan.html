@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stundenplan</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="Generator" content="NetObjects (http://NetObjects.com)">
+<script type="text/javascript" src="file:///C:/PROGRA~2/NETOBJ~1/NETOBJ~1/NetObjects System/Resources/js/external/jquery/jquery.js">
+</script>
+<script type="text/javascript" src="file:///C:/PROGRA~2/NETOBJ~1/NETOBJ~1/NetObjects System/Resources/js/external/jquery/plugins/navbars.js">
+</script>
+<link rel="stylesheet" type="text/css" href="file:///C:/PROGRA~2/NETOBJ~1/NETOBJ~1/NetObjects System/fusion.css">
+<link rel="stylesheet" type="text/css" href="file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Preview/style.css">
+<link rel="stylesheet" type="text/css" href="file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Preview/site.css">
+<style type="text/css" title="NOF_STYLE_SHEET">
+<!--
+body { margin:0px; width: 1314px; }
+div#LayoutLYR { float:left; position:absolute; }
+div#NavigationBar1LYR { position:absolute; top:30px; left:100px; width:505px; height:36px; z-index:1 }
+div#NavigationBar2LYR { position:absolute; top:699px; left:139px; width:657px; height:17px; z-index:2 }
+div#Tabelle1LYR { position:absolute; top:113px; left:142px; width:1058px; height:548px; z-index:3 }
+-->
+</style>
+
+<script type="text/javascript" src="file:///C:/Users/Clee/AppData/Local/Temp/FSITemp/JavaScript/stundenplan_nof.js">
+</script>
+</head>
+<body>
+  <div id="LayoutLYR">
+    <div id="Tabelle1LYR">
+      <table id="Tabelle1" border="1" style="border: 1px solid; height: 435px;border-spacing:1px;border-collapse:separate;">
+        <tr style="height: 29px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;width:180px;" id="Zelle1">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 180px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Stundenplan</span></b></p>
+          </td>
+          <td style="color: rgb(0,0,0); background-color: rgb(153,153,153);padding: 1px;width:166px;" id="Zelle2">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 166px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Montag</span></b></p>
+          </td>
+          <td style="color: rgb(0,0,0); background-color: rgb(153,153,153);padding: 1px;width:169px;" id="Zelle3">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 169px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Dienstag</span></b></p>
+          </td>
+          <td style="color: rgb(0,0,0); background-color: rgb(153,153,153);padding: 1px;width:170px;" id="Zelle4">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 170px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Mittwoch</span></b></p>
+          </td>
+          <td style="color: rgb(0,0,0); background-color: rgb(153,153,153);padding: 1px;width:170px;" id="Zelle5">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 170px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Donnerstag</span></b></p>
+          </td>
+          <td style="color: rgb(0,0,0); background-color: rgb(153,153,153);padding: 1px;width:170px;" id="Zelle6">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 170px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Freitag</span></b></p>
+          </td>
+        </tr>
+        <tr style="height: 48px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle7">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">8:00 - 8:45</span></b></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle8">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB9/LB4<br>Scy/Hor</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle9">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">EGU<br>Tauschek</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle10">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">PM<br>Leinhos</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle11">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">EGU<br>Tauschek</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle12">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Sozi<br>Willgerodt</span></p>
+          </td>
+        </tr>
+        <tr style="height: 48px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle13">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">8:45 - 9:30</span></b></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle14">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB9/LB4<br>Scy/Hor</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle15">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">EGU<br>Tauschek</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle16">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">PM<br>Leinhos</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle17">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">EV<br>Schmidt</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle18">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Sozi<br>Willgerodt</span></p>
+          </td>
+        </tr>
+        <tr style="height: 24px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle19">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">9:30 - 9:45</span></b></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle20">
+            <p style="text-align: center; background-color: rgb(192,192,192); margin-bottom: 0px; max-height: 24px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle21">
+            <p style="text-align: center; background-color: rgb(192,192,192); margin-bottom: 0px; max-height: 24px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle22">
+            <p style="text-align: center; background-color: rgb(192,192,192); margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle23">
+            <p style="text-align: center; background-color: rgb(192,192,192); margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle24">
+            <p style="text-align: center; background-color: rgb(192,192,192); margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+        </tr>
+        <tr style="height: 48px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle25">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">9:45 - 10:30</span></b></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle26">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB9<br>Schykowski</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle27">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">Mathe<br>Malkewitz</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle28">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">EV<br>Schmidt</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle29">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">DKo<br>Leinhos</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle30">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB1<br>Boscheinen</span></p>
+          </td>
+        </tr>
+        <tr style="height: 48px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle31">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">10:30 - 11:15</span></b></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle32">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB9<br>Schykowski</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle33">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">Mathe<br>Malkewitz</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle34">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB1<br>Boscheinen</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle35">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Mathe<br>Malkewitz</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle36">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">-</span></p>
+          </td>
+        </tr>
+        <tr style="height: 24px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle37">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">11:15 - 11:30</span></b></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle38">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle39">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle40">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle41">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle42">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Pause</span></p>
+          </td>
+        </tr>
+        <tr style="height: 48px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle43">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">11:30 - 12:15</span></b></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle44">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB3<br>Leinhos</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle45">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB4<br>Lennartz</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle46">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">-</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle47">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">DKo<br>Leinhos</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle48">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">WP2BF<br>Malkewitz</span></p>
+          </td>
+        </tr>
+        <tr style="height: 48px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle49">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">12:15 - 13:00</span></b></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle50">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">Englisch<br>Glunz</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle51">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB4<br>Lennartz</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle52">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB8<br>Wagner</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle53">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB8<br>Wagner</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle54">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">WP2BF<br>Malkewitz</span></p>
+          </td>
+        </tr>
+        <tr style="height: 24px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle55">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">13:00 - 13:30</span></b></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle56">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">Mittagspause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle57">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">Mittagspause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle58">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Mittagspause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle59">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Mittagspause</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 1px;" id="Zelle60">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Mittagspause</span></p>
+          </td>
+        </tr>
+        <tr style="height: 48px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle61">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">13:30 - 14:15</span></b></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle62">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">Englisch<br>Glunz</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle63">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB4.2<br>Horst</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle64">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">-</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle65">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">-</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle66">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Sport<br>Haas</span></p>
+          </td>
+        </tr>
+        <tr style="height: 48px;">
+          <td style="background-color: rgb(153,153,153);padding: 1px;" id="Zelle67">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 180px;"><b><span style="font-size: 20px; color: rgb(255,255,255); font-weight: bold;">14:15 - 15:00</span></b></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle68">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 166px;"><span style="font-size: 20px; color: rgb(0,0,0);">Englisch<br>Glunz</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle69">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 169px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB4.2<br>Horst</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle70">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 24px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">-</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle71">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">LB8<br>Wagner</span></p>
+          </td>
+          <td style="padding: 1px;" id="Zelle72">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 48px; display: block; width: 170px;"><span style="font-size: 20px; color: rgb(0,0,0);">Sport<br>Haas</span></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="NavigationBar1LYR" style="z-index: 1000">
+      <ul id="NavigationBar1" style="z-index: 1000; display: none;">
+        <li id="Navigationsschaltflaeche1"><a href="./index.html" title="Home" style="line-height: 0">Home</a></li>
+        <li id="Navigationsschaltflaeche2"><a href="./impressum.html" title="Impressum" style="line-height: 0">Impressum</a></li>
+        <li id="Navigationsschaltflaeche3"><a href="./stundenplan.html" title="Stundenplan" style="line-height: 0">Stundenplan</a></li>
+        <li id="Navigationsschaltflaeche4"><a href="./hausaufgaben.html" title="Hausaufgaben" style="line-height: 0">Hausaufgaben</a></li>
+        <li id="Navigationsschaltflaeche5"><a href="./terminkalender.html" title="Terminkalender" style="line-height: 0">Terminkalender</a></li>
+      </ul>
+    </div>
+    <div id="NavigationBar2LYR" style="text-align: left; z-index: 1000;" class="TextNavBar"><a class="nof-navPositioning" href="./index.html">Home</a>&nbsp;&nbsp; <a class="nof-navPositioning" href="./impressum.html">Impressum</a>&nbsp;&nbsp; Stundenplan&nbsp;&nbsp; <a class="nof-navPositioning" href="./hausaufgaben.html">Hausaufgaben</a>&nbsp;&nbsp; <a class="nof-navPositioning" href="./terminkalender.html">Terminkalender</a>&nbsp; </div>
+  </div>
+</body>
+</html>
+ 

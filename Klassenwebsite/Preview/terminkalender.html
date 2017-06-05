@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Terminkalender</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="Generator" content="NetObjects (http://NetObjects.com)">
+<script type="text/javascript" src="file:///C:/PROGRA~2/NETOBJ~1/NETOBJ~1/NetObjects System/Resources/js/external/jquery/jquery.js">
+</script>
+<script type="text/javascript" src="file:///C:/PROGRA~2/NETOBJ~1/NETOBJ~1/NetObjects System/Resources/js/external/jquery/plugins/navbars.js">
+</script>
+<link rel="stylesheet" type="text/css" href="file:///C:/PROGRA~2/NETOBJ~1/NETOBJ~1/NetObjects System/fusion.css">
+<link rel="stylesheet" type="text/css" href="file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Preview/style.css">
+<link rel="stylesheet" type="text/css" href="file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Preview/site.css">
+<style type="text/css" title="NOF_STYLE_SHEET">
+<!--
+body { margin:0px; width: 1212px; }
+div#LayoutLYR { float:left; position:absolute; }
+div#NavigationBar1LYR { position:absolute; top:30px; left:100px; width:505px; height:36px; z-index:1 }
+div#NavigationBar2LYR { position:absolute; top:1331px; left:139px; width:657px; height:17px; z-index:2 }
+div#Tabelle6LYR { position:absolute; top:124px; left:143px; width:1053px; height:1178px; z-index:3 }
+-->
+</style>
+
+<script type="text/javascript" src="file:///C:/Users/Clee/AppData/Local/Temp/FSITemp/JavaScript/terminkalender_nof.js">
+</script>
+</head>
+<body>
+  <div id="LayoutLYR">
+    <div id="Tabelle6LYR">
+      <table id="Tabelle6" border="1" style="border: 1px solid; height: 1201px;border-spacing:2px;border-collapse:separate;">
+        <tr style="height: 33px;">
+          <td style="background-color: rgb(153,153,153);padding: 2px;width:240px;" id="Zelle369">
+            <p style="text-align: center; background-color: rgb(153,153,153); margin-bottom: 0px; max-height: 29px; display: block; width: 240px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Mai</span></b></p>
+          </td>
+          <td style="background-color: rgb(153,153,153);padding: 2px;width:256px;" id="Zelle334">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 256px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Juni</span></b></p>
+          </td>
+          <td style="background-color: rgb(153,153,153);padding: 2px;width:266px;" id="Zelle333">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 266px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">Juli</span></b></p>
+          </td>
+          <td style="background-color: rgb(153,153,153);padding: 2px;width:255px;" id="Zelle337">
+            <p style="text-align: center; margin-bottom: 0px; max-height: 29px; display: block; width: 255px;"><b><span style="font-size: 24px; color: rgb(255,255,255); font-weight: bold;">August</span></b></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle370">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">1 Mo Maifeiertag</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle273">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">1 Do Klassenfahrt</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle274">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">1 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle338">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">1 Di</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle371">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">2 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle302">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">2 Fr Klassenfahrt</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle301">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">2 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle339">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">2 Mi</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle372">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">3 Mi LB8 KA</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle300">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">3 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle299">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">3 Mo Praktikumswoche 3</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle340">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">3 Do</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle373">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">4 Do PM KA</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle298">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">4 So Pfingstsonntag</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle297">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">4 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle341">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">4 Fr</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle374">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">5 Fr</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle296">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">5 Mo Pfingstmontag</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle295">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">5 Mi</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle342">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">5 Sa</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle375">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">6 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle294">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">6 Di Abgabe PM Projekt</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle293">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">6 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle343">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">6 So</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle376">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">7 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle292">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">7 Mi</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle291">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">7 Fr</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle344">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">7 Mo Praktikumswoche 8</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle377">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">8 Mo Englisch KA</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle290">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">8 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle289">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">8 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle345">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">8 Di</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle378">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">9 Di LB</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle288">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">9 Fr</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle287">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">9 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle346">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">9 Mi</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle379">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">10 Mi</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle286">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">10 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle285">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">10 Mo Praktikumswoche 4</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle347">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">10 Do</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle380">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">11 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle284">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">11 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle283">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">11 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle348">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">11 Fr</span></p>
+          </td>
+        </tr>
+        <tr style="height: 29px;">
+          <td style="padding: 2px;" id="Zelle381">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">12 Fr</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle275">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">12 Mo</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle276">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">12 Mi</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle349">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">12 Sa</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle382">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">13 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle277">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">13 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle278">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">13 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle350">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">13 So</span></p>
+          </td>
+        </tr>
+        <tr style="height: 29px;">
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle383">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">14 So Muttertag</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle279">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">14 Mi Letzter Schultag</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle280">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">14 Fr</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle351">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">14 Mo Praktikumswoche 9</span></p>
+          </td>
+        </tr>
+        <tr style="height: 26px;">
+          <td style="padding: 2px;" id="Zelle384">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">15 Mo</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle312">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">15 Do Fronleichnam</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle311">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">15 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle352">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">15 Di</span></p>
+          </td>
+        </tr>
+        <tr style="height: 29px;">
+          <td style="padding: 2px;" id="Zelle385">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">16 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle310">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">16 Fr Brückentag</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle309">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">16 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle353">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">16 Mi</span></p>
+          </td>
+        </tr>
+        <tr style="height: 34px;">
+          <td style="padding: 2px;" id="Zelle386">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">17 Mi</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle308">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">17 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle307">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">17 Mo Praktikumswoche 5</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle354">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">17 Do</span></p>
+          </td>
+        </tr>
+        <tr style="height: 29px;">
+          <td style="padding: 2px;" id="Zelle387">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">18 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle306">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">18 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle305">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">18 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle355">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">18 Fr</span></p>
+          </td>
+        </tr>
+        <tr style="height: 36px;">
+          <td style="padding: 2px;" id="Zelle388">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">19 Fr</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle304">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">19 Mo Praktikum Beginn</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle303">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">19 Mi</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle356">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">19 Sa</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle389">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">20 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle281">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">20 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle282">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">20 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle357">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">20 So</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle390">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">21 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle328">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">21 Mi</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle327">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">21 Fr</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle358">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">21 Mo Praktikumswoche 10</span></p>
+          </td>
+        </tr>
+        <tr style="height: 31px;">
+          <td style="padding: 2px;" id="Zelle391">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">22 Mo</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle326">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">22 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle325">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">22 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle359">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">22 Di</span></p>
+          </td>
+        </tr>
+        <tr style="height: 29px;">
+          <td style="padding: 2px;" id="Zelle392">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">23 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle324">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">23 Fr</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle323">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">23 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle360">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">23 Mi</span></p>
+          </td>
+        </tr>
+        <tr style="height: 31px;">
+          <td style="padding: 2px;" id="Zelle393">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">24 Mi</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle322">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">24 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle321">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">24 Mo Praktikumswoche 6</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle361">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">24 Do</span></p>
+          </td>
+        </tr>
+        <tr style="height: 30px;">
+          <td style="padding: 2px;" id="Zelle394">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">25 Do Christi Himmelfahrt</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle320">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">25 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle319">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">25 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle362">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">25 Fr</span></p>
+          </td>
+        </tr>
+        <tr style="height: 30px;">
+          <td style="padding: 2px;" id="Zelle395">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">26 Fr</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle318">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">26 Mo Praktikumswoche 2</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle317">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">26 Mi</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle363">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">26 Sa</span></p>
+          </td>
+        </tr>
+        <tr style="height: 29px;">
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle396">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">27 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle316">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">27 Di</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle315">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">27 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle364">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">27 So</span></p>
+          </td>
+        </tr>
+        <tr style="height: 30px;">
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle397">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">28 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle313">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">28 Mi</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle314">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">28 Fr</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle365">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">28 Mo Erster Schultag</span></p>
+          </td>
+        </tr>
+        <tr style="height: 29px;">
+          <td style="padding: 2px;" id="Zelle398">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">29 Mo Klassenfahrt</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle332">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">29 Do</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle331">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">29 Sa</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle366">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">29 Di</span></p>
+          </td>
+        </tr>
+        <tr style="height: 29px;">
+          <td style="padding: 2px;" id="Zelle399">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">30 Di Klassenfahrt</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle329">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 256px;"><span style="font-size: 20px;">30 Fr</span></p>
+          </td>
+          <td style="background-color: rgb(192,192,192);padding: 2px;" id="Zelle330">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">30 So</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle367">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">30 Mi</span></p>
+          </td>
+        </tr>
+        <tr style="height: 27px;">
+          <td style="padding: 2px;" id="Zelle400">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 240px;"><span style="font-size: 20px;">31 Mi Klassenfahrt</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle335">
+            <p style="line-height: 0px; margin-bottom: 0px; max-height: 17px; display: block; width: 256px;"><span style="font-size: 20px;"></span>&nbsp;</p>
+          </td>
+          <td style="padding: 2px;" id="Zelle336">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 266px;"><span style="font-size: 20px;">31 Mo Praktikumswoche 7</span></p>
+          </td>
+          <td style="padding: 2px;" id="Zelle368">
+            <p style="margin-bottom: 0px; max-height: 24px; display: block; width: 255px;"><span style="font-size: 20px;">31 Do</span></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="NavigationBar1LYR" style="z-index: 1000">
+      <ul id="NavigationBar1" style="z-index: 1000; display: none;">
+        <li id="Navigationsschaltflaeche1"><a href="./index.html" title="Home" style="line-height: 0">Home</a></li>
+        <li id="Navigationsschaltflaeche2"><a href="./impressum.html" title="Impressum" style="line-height: 0">Impressum</a></li>
+        <li id="Navigationsschaltflaeche3"><a href="./stundenplan.html" title="Stundenplan" style="line-height: 0">Stundenplan</a></li>
+        <li id="Navigationsschaltflaeche4"><a href="./hausaufgaben.html" title="Hausaufgaben" style="line-height: 0">Hausaufgaben</a></li>
+        <li id="Navigationsschaltflaeche5"><a href="./terminkalender.html" title="Terminkalender" style="line-height: 0">Terminkalender</a></li>
+      </ul>
+    </div>
+    <div id="NavigationBar2LYR" style="text-align: left; z-index: 1000;" class="TextNavBar"><a class="nof-navPositioning" href="./index.html">Home</a>&nbsp;&nbsp; <a class="nof-navPositioning" href="./impressum.html">Impressum</a>&nbsp;&nbsp; <a class="nof-navPositioning" href="./stundenplan.html">Stundenplan</a>&nbsp;&nbsp; <a class="nof-navPositioning" href="./hausaufgaben.html">Hausaufgaben</a>&nbsp;&nbsp; Terminkalender&nbsp; </div>
+  </div>
+</body>
+</html>
+ 

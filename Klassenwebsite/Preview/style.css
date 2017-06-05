@@ -1,5 +1,5 @@
 /* Text */
-BODY {	background-image : url( "file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Styles/Broadcast - Blue/Images/Background.gif" );
+BODY {	background-image : url( "https://rawgit.com/Kille250/Projekt/master/Klassenwebsite/Styles/Site/Images/Background.gif" );
 	background-repeat : repeat-x;
 	font-family : Arial;
 	font-size : 14px;
@@ -106,11 +106,11 @@ OL {
 	border: none !important
 }
 div.ui-accordion.selected a.head.selected  {
-	background-image: url( "file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Styles/Broadcast - Blue/Images/AccordionTabOpen.png" ) !important;
+	background-image: url( "https://rawgit.com/Kille250/Projekt/master/Klassenwebsite/Styles/Site/Images/AccordionTabOpen.png" ) !important;
 	color: #f2f2f2 !important
 }
 .ui-accordion a.head {
-	background-image: url( "file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Styles/Broadcast - Blue/Images/AccordionTabClosed.png" ) !important;
+	background-image: url( "https://rawgit.com/Kille250/Projekt/master/Klassenwebsite/Styles/Site/Images/AccordionTabClosed.png" ) !important;
 	background-color: #ffffff !important;
 	border: none !important;
 	font-size: 11px !important;
@@ -130,7 +130,7 @@ div.ui-accordion.selected a.head.selected  {
 	padding: 5px !important
 }
 .ui-tabs-nav a {
-	background-image: url( "file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Styles/Broadcast - Blue/Images/tab_top.png" ) !important;
+	background-image: url( "https://rawgit.com/Kille250/Projekt/master/Klassenwebsite/Styles/Site/Images/tab_top.png" ) !important;
 	font-weight: normal !important;
 	color: #f2f2f2 !important;
 	font-size: 11px !important;
@@ -140,7 +140,7 @@ div.ui-accordion.selected a.head.selected  {
 	color: #f2f2f2 !important
 }
 .ui-tabs-nav a span  {
-	background-image: url( "file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Styles/Broadcast - Blue/Images/tab_top.png" ) !important;
+	background-image: url( "https://rawgit.com/Kille250/Projekt/master/Klassenwebsite/Styles/Site/Images/tab_top.png" ) !important;
 	max-height: 50px;
 	height: 22px !important
 }
@@ -157,13 +157,13 @@ div.TogglePaneFancyHeader {
 	border: 1px solid #3B5998 !important;
 	border-width: 0px 0px !important;
 	background-color: transparent !important;
-	background-image: url( "file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Styles/Broadcast - Blue/Images/TogglePaneOpen.png" ) !important;
+	background-image: url( "https://rawgit.com/Kille250/Projekt/master/Klassenwebsite/Styles/Site/Images/TogglePaneOpen.png" ) !important;
 	background-position: 0% 0% !important;
 	color: #f2f2f2 !important
 }
 div.TogglePaneFancyHeaderClosed {
 	background-color: transparent !important;
-	background-image: url( "file:///C:/Users/Clee/Documents/BBS1 Mainz/Klassenwebsite/Styles/Broadcast - Blue/Images/TogglePaneClosed.png" ) !important;
+	background-image: url( "https://rawgit.com/Kille250/Projekt/master/Klassenwebsite/Styles/Site/Images/TogglePaneClosed.png" ) !important;
 	background-position: 0% 0% !important;
 	color: #f2f2f2 !important
 }
